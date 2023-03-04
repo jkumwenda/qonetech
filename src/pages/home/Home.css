@@ -1,0 +1,103 @@
+.Home {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-gap: 10px;
+  height: 100%;
+}
+
+.BreadcrumbContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CreateProjectContainer {
+  display: flex;
+  grid-gap: 10px;
+}
+
+.SearchContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.btn-search {
+  border: 0px;
+  font-weight: bold !important;
+  border-radius: 0px 8px 8px 0px !important;
+}
+
+.HeaderContainer {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 12px;
+}
+
+.Search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.SearchInput {
+  border-radius: 8px 0px 0px 8px !important;
+}
+
+.ContentContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  font-size: small;
+}
+
+.Card1 {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 8px;
+  border: 2px solid #ed8154;
+  background-color: #fff;
+}
+.CardTitle {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-bottom: 2px solid #ed8154;
+}
+
+.CardContainer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.CardContent {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #fcf6ef;
+  padding: 8px 10px;
+  border-radius: 0px 0px 0px 8px;
+}
+.CardContentTitle {
+  font-weight: bold;
+}
+
+.CardIcon {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+
+.CardIcon .FaIcon {
+  padding: 0px;
+  margin: 0px;
+}
+
+.CardNav {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  font-weight: bold;
+  padding: 8px 10px;
+  color: #ed8154;
+}

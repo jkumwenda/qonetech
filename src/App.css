@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  color: #828282;
 }
 
 .App-logo {
@@ -35,4 +36,84 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Primary {
+  color: #ed8154;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: small;
+  border: 0px;
+}
+
+.btn-primary {
+  background-color: #ed8154;
+  color: #fff;
+  padding: 10px;
+}
+
+.btn .FaIcon {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn-project {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: smaller;
+}
+
+.Input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c5c5c5;
+  font-weight: bold;
+  color: #828282;
+}
+.SelectInput {
+  display: grid;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c5c5c5;
+  font-weight: bold;
+  color: #828282;
+}
+
+.InputOption {
+  font-weight: bold;
+  color: #828282;
+}
+
+.PageTitle {
+  font-weight: bold;
+}
+
+.PaginationContainer {
+  display: grid;
+}
+
+.Pagination {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+.Pagination li {
+  list-style: none;
+  background-color: #fff !important;
+  width: 20px;
+  padding: 6px 8px;
+  text-align: center;
+  margin-right: 1px;
+  border-radius: 2px;
+}
+
+.Pagination li.Active {
+  background-color: #ed8154 !important;
+  color: #fff;
 }

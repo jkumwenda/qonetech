@@ -1,0 +1,17 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 28px;
+}
+
+.Logo {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 50px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.UserIcon {
+  color: #ed8154;
+}

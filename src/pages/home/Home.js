@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faSliders } from "@fortawesome/free-solid-svg-icons";
@@ -7,9 +8,18 @@ import { faForward } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import NewProject from "components/cards/new_project/NewProject";
 import "./Home.css";
 
 function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function handleSubmit(formData) {
+    // do something with the form data, such as sending it to a server
+    console.log(formData);
+    setIsModalOpen(false);
+  }
+
   return (
     <div className="Home">
       <div className="HeaderContainer">
@@ -19,6 +29,12 @@ function Home() {
             <button className="btn btn-primary btn-project">
               Create New Project
             </button>
+            <button onClick={() => setIsModalOpen(true)}>Open Form</button>
+            <NewProject
+              isOpen={isModalOpen}
+              onClose={() => setIsModalOpen(false)}
+              onSubmit={handleSubmit}
+            />
             <button className="btn btn-primary">
               <FontAwesomeIcon className="FaIcon" icon={faGear} size="lg" />
             </button>
